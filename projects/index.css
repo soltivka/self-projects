@@ -5,6 +5,12 @@ body{
   margin :0px;
   color: #3D62CF;
 }
+a{
+  color: #3D62CF;
+}
+h2{
+  line-height: 35px;
+}
 .button {
   text-decoration: none;
   min-width: 300px;
@@ -53,7 +59,7 @@ header{
   }
   #sitename{
     vertical-align: sub;
-    margin-left: 4%;
+    margin-left: 50px;
   }
 
 
@@ -103,7 +109,12 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   border-top:solid #3D62CF;
-  z-index: 1;
+  -webkit-transition: 1s;
+}
+#home-photo:hover{
+  transition: 1s;
+  background-position-y: 10px;
+
 }
 
 #home-info{
