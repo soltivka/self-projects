@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="mainMenu" href="/index.html">
+	
+	</div>
+	<div class="emptyspace">	
+	</div>
+	<div class="gameRootElement">
+		<div class="startMenuPosition">
+			<div class="startMenu">
+				<div class="checkBoxPositions">
+					<div class="tableSizePosition">
+						<div class="tableSize">
+							<b>Укажите размер поля</b><br>
+							<input class="inputSize" id="inputSize9" type="radio" name="tableSize" value="9" data-table = "300"checked  > 3 x 3<Br>
+							<input class="inputSize" id="inputSize16" type="radio" name="tableSize" value="16" data-table = "400"  > 4 x 4<Br>
+							<input class="inputSize" id="inputSize25" type="radio" name="tableSize" value="25"  data-table = "400" > 5 x 5<Br>
+							<input class="inputSize" id="inputSize36" type="radio" name="tableSize" value="36" data-table = "400"  > 6 x 6<Br>
+							<input class="inputSize" id="inputSize49" type="radio" name="tableSize" value="49"  data-table = "400" > 7 x 7<Br>
+							<input class="inputSize" id="inputSize56" type="radio" name="tableSize" value="56"  data-table = "400" > 8 x 8<Br>
+							<input class="inputSize" id="inputSize81" type="radio" name="tableSize" value="81"  data-table = "400" > 9 x 9<Br>
+							<input class="inputSize" id="inputSize100" type="radio" name="tableSize" value="100" data-table = "400"  > 10 x 10<Br>
+						</div>
+					</div>
+			
+					<div class="toWinPosition">
+						<div class="toWin">
+							<b>Клеток для победы </b><br>
+							<input class="inputToWin" if="inputToWin3"type="radio" name="toWin" value="3" checked > 3<Br>
+							<input class="inputToWin" if="inputToWin3" type="radio" name="toWin" value="4"  > 4<Br>
+							<input class="inputToWin" if="inputToWin3" type="radio" name="toWin" value="5"  > 5<Br>
+							<input class="inputToWin" if="inputToWin3" type="radio" name="toWin" 	value="6"  > 6<Br>
+							<input class="inputToWin" if="inputToWin3" type="radio" name="toWin" value="7"  > 7<Br>
+						
+						</div>
+					</div>
+					<div class="computer">
+						<div class="computerinner">
+							<b>Режим игры </b><br>
+							<input class="checkAI"  type="radio" name="AI" value="1"  > против рандома<Br>
+							<input class="checkAI"  type="radio" name="AI" value="0"  > против игрока<Br>
+						</div>
+					</div>
+				</div>
+				<div class="startButton">
+				</div>
+			</div>
+		</div>
+	
+		<div class="tablePosition">
+			<div class="table">
+				
+				<div class="block" data-block="0">
+					
+				</div>
+				
+			</div>
+			<div class = "resetPosition">
+				<button class = "resetButton">
+				
+				</button>
+			</div>
+		</div>
+		
+	
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="index.js"></script>
+	
+	<script src="jQuery.js"></script>
+</body>
+</html>

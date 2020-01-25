@@ -1,0 +1,172 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #21D0ED;
+}
+b{
+  font-size: 20px;
+}
+p{
+  font-size: 18px;
+}
+a{
+  font-size:20px;
+}
+.home_container {
+  }
+
+.button {
+  text-decoration: none;
+  min-width: 300px;
+  text-align: center;
+  outline: none;
+  display: block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #74F3FA 0%, #0452C1 51%, #74F3FA 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .5s;
+}
+.button:hover {background-position: right center;
+color: blue;}
+
+h1{
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+}
+
+header{ 
+  position: fixed;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  background-color: #21D0ED;
+  margin: 0px;
+  padding: 5px;
+  max-height: 74px;
+
+
+   }
+
+.logo { 
+  background: url(trader/resources/smalllogo.jpg) ;
+  background-color: #21D0ED;
+  display: block;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+  width: 50px;
+  height: 50px;
+
+  margin: 10px;
+  cursor: pointer;
+}
+.header_button{ 
+  min-width: 50px;
+  min-height: 30px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  display: block;
+  color: white;
+  padding: 10px;
+  margin: 10px 20px;
+  border-left: solid;
+  border-right: solid;
+  border-radius: 30px;
+  border-color: blue;
+  border-width: 1px;
+  min-width: 150px;
+}
+.header_button:hover {background-position: right center;
+  background-image: linear-gradient(to right, #0452C1 0%, #21D0ED 50%, #0452C1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  transition: .8s;
+  color: blue;
+  border: solid;
+  border-width: 1px;
+}
+.pages {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.personalProjects_container{
+  background-image: url(trader/resources/background-r.jpg);
+  background-color: #21D0ED ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 1100px;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .home_container{
+  background-image: url(trader/resources/background.jpg);
+  background-color: #21D0ED ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 1100px;
+  }
+
+  
+  .home_info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .block{
+    background-color:rgba(33, 208, 237, 0.8) ;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    height: 90%;
+    width: 90%;
+    min-width: 234px;
+  }
+
+  .block_contacts .block_tehnologies .block_photo{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .block_info {
+    display: flex;
+    flex-direction: column;
+    max-height: 12%;
+    align-items: center;
+    margin: 20px;
+    margin-top: 94px;
+  }
+  .h1_center{
+    text-align: center;
+  }
+  .photo {
+    max-width: 325px;
+  }
+  .photo_inner{
+    background-image: url(trader/resources/photo.jpg);
+    width: 100%;
+    min-height: 325px;
+    background-size: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+  }
+

@@ -1,0 +1,51 @@
+.playerCard{
+	border:solid;
+}
+.playerCard_header{
+	display:flex;
+	justify-content: space-between;
+	border-bottom:solid;
+}
+.playerCard_playerName{
+	border-right: solid;
+	width: 70%;
+	padding: 2px;
+	padding-left: 20px;
+}
+.playerCard_content{
+	display: flex;
+	justify-content: space-between;
+}
+.playerCard_companies{
+	display:flex;
+	width: 50%;
+	justify-content: space-between;
+	border-right:solid;
+	padding: 2px;
+	padding-left: 20px;
+}
+.playerCard_buyButtons{
+	display:flex;
+	flex-direction: column;
+}
+.playerCard_sellButtons{
+	display:flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.playerCard_buttons{
+	display:flex;
+	justify-content: space-between;
+	width: 20%;
+
+
+}
+.playerCard_button{
+	margin: 1px;
+}
+.playerCard_companyName{
+	height: 21px;
+}
+.playerCard_companyShares{
+	height: 21px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trader</title>
+	<link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="gameRootElement">
+		
+		<! выбор колличества игроков>
+		<div class="menu_playersQuantity_container">
+			<div class="menu_playersQuantity"> 
+				<b>Укажите количество игроков</b><br>
+				<div class="checkbox_playersQuantity">
+					
+					<button class="menu_playersQuantityChecker_template"></button> <! сделать красивую менюшку>
+				</div>
+				<button class="button_playersQuantity">Ok</button>
+			</div>
+		</div>
+
+
+		
+
+
+		<! строка компании в карточке игрока / display: none>
+		<div class="playerCard_company playerCard_company_template">
+			<div class="playerCard_companyName">company1</div>
+			<div class="playerCard_companyShares">1</div>
+			<div class="playerCard_buttons">
+				<button class="playerCard_button_buy playerCard_button" data-playerId="0" data-companyId="0">buy</button>
+				<button class="playerCard_button_sell playerCard_button">sell</button>
+			</div>
+		</div>
+
+
+
+
+
+		<! карточка игрока template / display:none >
+		
+		<div class="playerCard playerCard_template">
+			<div class="playerCard_header">
+				<div class="playerCard_playerName">
+					Игрок 1
+				</div>
+				<div class="playerCard_playerGold_template">
+					Gold: 9999
+				</div>
+			</div>
+			<div class="playerCard_content">
+				<div class="playerCard_companies_template">
+				
+				</div>
+				
+				<div class="playerCard_events">
+					event1<br>
+					event2<br>
+				</div>
+			</div>
+		</div>
+		
+		
+		<! карта компании на столе / display: none >
+		<div class="companyCard companyCard_template">
+			<div class="companyCard_head">
+				<div class="companyCard_name">
+					companyName 1
+				</div>
+				<div class="companyCard_logo">
+				</div>
+			</div>
+			<div class="companyCard_sharesPrice_template">5</div>
+			<div class="companyCard_freeShares_template">10</div>
+			<div class="companyCard_dinamic">10</div>
+
+		</div>
+		
+
+
+
+
+
+
+		<! разметка страницы>
+		<div class="screen_header">
+			
+		</div>
+		<div class="screen_content">
+			<div class="playerCards">
+			
+			</div>
+			
+
+			<div class="table">
+				<div class="table_graph">
+					тут будет какойто график :)
+				</div>
+				<div class="table_content">
+					<div class="table_companies">
+						<div class="table_companies_header"> 
+							<div class="table_companies_header_empty"></div>
+							<div class="table_companies_header_price">Cost</div>
+							<div class="table_companies_header_free">Free</div>
+							<div class="table_companies_header_dinamic">Dinamic</div>
+						</div>
+						
+					</div>
+					
+					
+					<div class="table_div">
+						<button class="passTurn">Следующий игрок</button>
+						тут будет какаято важная инфа
+					</div>
+				</div>
+				<div class="table_footer">
+					и еще чтото важное !!!!!
+				</div>
+				
+			
+			</div>
+			
+		</div>
+		<div class="screen_footer">
+			
+		</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="index.js"></script>	
+</body>
+</html>

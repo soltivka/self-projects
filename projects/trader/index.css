@@ -1,0 +1,329 @@
+body{
+	background-image: url("resources/background.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+    height:100%;
+    overflow:hidden;
+}
+html {
+	height: 100%;
+}
+/*отключить стили для кнопки по умолчанию*/
+button {
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor:pointer;
+	border: solid 3px transparent;
+	border-radius: 0px 4px;
+}
+button: active{
+	transform: translateY(1px);
+    filter: saturate(150%);
+}
+.gameRootElement{
+	height:100%;
+}
+
+/*стили менюшки для выбора колличества игроков*/
+.menu_playersQuantity_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+}
+.menu_playersQuantity{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 20%;
+	background-color: #1CA3DB;
+	opacity: 0.7;
+	width: 20%;
+	border:solid;
+	border-color: #010848;
+	border-width: 7px;
+	border-radius: 0 30px; 
+	margin: 10px;
+	padding:10px;
+	
+}
+.menu_playersQuantityChecker_template{
+	display: none;
+}
+.menu_playersQuantityChecker{
+	display: flex;
+	justify-content: center;
+	margin: 2px;
+	min-width: 40px;
+	background-color: #06cfb4;
+	cursor: pointer;
+}
+.menu_playersQuantityChecker:hover{
+	background-color: #04dbbe;
+}
+.menu_playersQuantityChecker:focus{
+	background: #00a68f;
+          box-shadow: inset 0px 0px 5px #00c9ae;
+}
+
+.checkbox_playersQuantity {
+	display:flex;
+	width: 100%
+	justify-content: space-around;
+	
+}
+
+.button_playersQuantity{
+	width:20%;
+	background-color: #06cfb4;
+	margin-top: 10px;
+}
+.button_playersQuantity:hover{
+	background-color: #04dbbe;
+}
+
+
+
+
+
+
+/*стили для карты игрока playerCard*/
+.playerCard{
+	border:none;
+	border-radius: 5px;
+	background-color: #58F4F8;
+	opacity: 0.9;
+
+	display: block;
+	margin: 5px;
+}
+.playerCard_template{
+	display:none;
+}
+.playerCard_header{
+	display:flex;
+	justify-content: space-between;
+}
+.playerCard_playerGold{
+	background-color: #d9bf00;
+	border-radius: 5px;
+	color: white;
+	border-left: none;
+	text-align: center;
+
+}
+.playerCard_playerName{
+	width: 70%;
+	padding: 2px;
+	color: white;
+	padding-left: 0px;
+	text-align: center;
+	background-color: black;
+	border-radius: 5px;
+}
+.playerCard_content{
+	display: flex;
+	justify-content: space-between;
+}
+.playerCard_company {
+	display:flex;
+	justify-content: space-between;
+}
+.playerCard_company_template {
+	display:none;
+}
+
+.playerCard_companies{
+	display:flex;
+	flex-direction: column;
+	width: 70%;
+	justify-content: space-between;
+	border-right:solid;
+	padding: 2px;
+	padding-left: 0px;
+}
+.playerCard_buyButtons{
+	display:flex;
+	flex-direction: column;
+}
+.playerCard_sellButtons{
+	display: flex;
+	flex-direction: column;
+	margin-right: 0px;
+}
+.playerCard_buttons{
+	display:flex;
+	justify-content: space-around;
+	width: 40%;
+
+
+}
+.playerCard_button_buy .playerCard_button_sell{
+	margin: 1px;
+}
+.playerCard_button_buy{
+	background-color: #81ba6e;
+	border: none;
+	margin: 2px;
+	border-radius: 20%;
+}
+.playerCard_button_buy:hover{
+	background-color: #3bad15;
+}
+.playerCard_button_sell{
+	background-color: #d17962;
+	border: none;
+	margin: 2px;
+	border-radius: 20%;
+
+}
+.playerCard_button_sell:hover{
+	background-color: #ba4425;
+}
+.playerCard_companyName{
+	border-radius: 5px;
+	height: 21px;
+	min-width: 55px;
+	text-align: center;
+}
+.playerCard_companyShares{
+	height: 21px;
+}
+
+
+
+
+/* разметка screen_content*/
+.screen_content{
+	display: flex;
+}
+.playerCards{
+	width: 40%;
+}
+
+
+/*разметка screen header*/
+.screen_header{
+	height: 15%;
+	min-height: 15px;
+	border: solid;
+	display: none;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/*разметка стола  table*/ 
+.table{
+	border: solid;
+	display: none;
+	width: 59%;
+	margin: 5px;
+	margin-left: 0px;
+	flex-direction: column;
+}
+
+.table_graph{
+	display:block;
+	min-width: 100%
+	min-height: 100px;
+	border-bottom: solid;
+}
+.table_content{
+	display:flex;
+	width: 100%;
+	}
+.table_companies{
+
+	display:flex;
+	flex-direction: column;
+	margin-right: 5px;
+	min-width: 220px;
+	width: 100%;
+}
+.table_div {
+	border-left: solid;
+	width: 50%;
+}
+.table_footer {
+	border-top: solid;
+}
+.table_empty{
+	display:flex;
+	min-width: 50px;
+}
+
+
+/* компания на столе*/
+
+
+.companyCard {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-radius: 5px;
+}
+.companyCard_sharesPrice, 
+.companyCard_freeShares,
+.companyCard_dinamic,
+.table_companies_header_price,
+.table_companies_header_free,
+.table_companies_header_dinamic{
+	min-width: 55px;
+	text-align: center;
+	color:white;
+	border-radius: 5px;
+	opacity: 0.9;
+}
+.table_companies_header_price,
+.table_companies_header_free,
+.table_companies_header_dinamic{
+	background-color: #0667C8;
+	border-radius: 5px;
+}
+
+.companyCard_head{
+	display: flex;
+	flex-direction: column;
+	min-width: 50px;
+	min-height: 50px;
+}
+.companyCard_logo{
+	min-height: 50px;
+	background-size: contain ;
+	background-repeat: no-repeat;
+}
+.companyCard_template{
+	display: none;
+}
+.companyCard_name {
+	color: white;
+}
+
+/* хедер компаний на столе */ 
+.table_companies_header {
+	display: flex;
+	justify-content: space-between;
+}
+.table_companies_header_empty{
+	min-width: 50px;
+}
+
+/* игровой стол   */
+.passTurn{
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+}
+
+
+
+
+
