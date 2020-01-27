@@ -1,10 +1,10 @@
+
 body{
   width: 100%;
-  background-color: #34e6f4;
+  background-color: #009afa;
   padding: 0px;
   margin :0px;
   color: #3D62CF;
-  overflow-x: hidden;
 }
 a{
   color: #3D62CF;
@@ -42,12 +42,14 @@ color: #3D62CF;}
 display:flex;
 }
 header{ 
-  position: fixed;
+  position: sticky;
+  top:0;
+  left:0;
   width: 100%;
   display:flex;
   align-items: center;
   justify-content: space-between;
-  background-color:rgba(0,0,0,0,);
+  background-color:rgba(0, 154, 250,.38);
   background-image:url(resources/header.png);
   background-size: cover;
   background-position: left;
@@ -56,6 +58,8 @@ header{
   height: 50px;
   opacity: 0.9;
   z-index: 10;
+  
+  box-shadow: 0 20px 40px rgba(0, 154, 250,.5);
 
 
   }
@@ -91,6 +95,7 @@ header{
   width: 70%;
   display: flex;
   justify-content: space-around;
+  background-color: linear-gradient(to right, #009afa 0%,#3D62CF 80%, #3D62CF 100%);
 }
 
 .home{
@@ -104,7 +109,7 @@ header{
 
 
 #home-photo{
-  width: 320px;
+  width: 30%;
   height: 350px;
   margin-left: 50px;
   background-image: url(resources/photo.jpg);
@@ -132,14 +137,21 @@ header{
   flex-direction: column;
   margin-left: 50px;
 }
+#home-fractal-container{
+  display: flex;
+  max-width: 40%;
+  height: 100%;
+  align-self: center;
+  justify-content: left;
+}
 
 #home-fractal{
- max-width: 70%;
- position: absolute;
- right: -200px;
+ max-width: 40%;
  opacity: 0.9;
+ position: relative;
+ left: -10%;
  
-  -webkit-animation: rotation 60s infinite linear;
+  -webkit-animation: rotation 60s infinite cubic-bezier(0.26, 0.71, 0.4, 0.61);
 }
 
 @-webkit-keyframes rotation {
