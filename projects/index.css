@@ -4,6 +4,7 @@ body{
   padding: 0px;
   margin :0px;
   color: #3D62CF;
+  overflow-x: hidden;
 }
 a{
   color: #3D62CF;
@@ -54,6 +55,7 @@ header{
   padding: 5px;
   height: 50px;
   opacity: 0.9;
+  z-index: 10;
 
 
   }
@@ -80,9 +82,9 @@ header{
   min-width: 150px;
 }
 .header_button:hover {
-  background-image: linear-gradient(to top, #009afa 0%,#3D62CF 30%, #3D62CF 100%);
+  background-image: linear-gradient(to top, #009afa 0%,#3D62CF 50%, #3D62CF 100%);
   background-size: 200% auto;
-  box-shadow: 0 5px 10px rgba(0,0,0,.5);
+  box-shadow: 0 5px 10px rgba(0, 0, 0,.5);
   transition: .3s;
 }
 .header-buttons {
@@ -99,6 +101,7 @@ header{
   background-color: #009afa;
   align-items:center;
 }
+
 
 #home-photo{
   width: 320px;
@@ -118,16 +121,36 @@ header{
 }
 
 #home-info{
-  width: 70%;
+  width: 40%;
   height: 350px;
   border-top:solid #3D62CF;
   flex-direction: column;
+  z-index:1;
 }
 
 #home-info-inner{
   flex-direction: column;
   margin-left: 50px;
 }
+
+#home-fractal{
+ max-width: 70%;
+ position: absolute;
+ right: -200px;
+ opacity: 0.9;
+ 
+  -webkit-animation: rotation 60s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
+
 
 
 
