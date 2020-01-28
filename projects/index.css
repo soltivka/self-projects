@@ -111,7 +111,6 @@ header{
 #home-photo{
   width: 30%;
   height: 350px;
-  position: relative;
   margin-left: 50px;
   background-image: url(resources/photo.jpg);
   background-size: contain;
@@ -139,40 +138,28 @@ header{
   margin-left: 50px;
 }
 #home-fractal-container{
-  width: 30%;
+  display: flex;
+  max-width: 40%;
+  height: 100%;
+  align-self: center;
+  justify-content: left;
 }
 
 #home-fractal{
- max-width: 105%;
+ max-width: 40%;
  opacity: 0.9;
  position: relative;
+ left: -10%;
  
- 
-  -webkit-animation: rotation 40s infinite ease-in-out;
+  -webkit-animation: rotation 60s infinite cubic-bezier(0.26, 0.71, 0.4, 0.61);
 }
 
 @-webkit-keyframes rotation {
-  0% {
+  from {
       -webkit-transform: rotate(0deg);
-      left: -20%;
-      top: 0px;
-      opacity:0.9;
   }
-  50% { 
-      left:-40%;
-      top: 180px;
-      opacity: 0.4;
-  }
-  75% {
-      left:-90%;
-      top:150px;
-      opacity:1;
-  }
-  100% {
-      -webkit-transform: rotate(179deg);
-      left: -20%;
-      top: 0px;
-      opacity:0.9;
+  to {
+      -webkit-transform: rotate(359deg);
   }
 }
 
