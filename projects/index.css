@@ -2,8 +2,8 @@
 body{
   width: 100%;
   background-color: #009afa;
-  padding: 0px;
-  margin :0px;
+  padding: 0;
+  margin :0;
   color: #3D62CF;
 }
 a{
@@ -15,6 +15,7 @@ h2{
 .button {
   text-decoration: none;
   min-width: 300px;
+  width: 70%;
   text-align: center;
   outline: none;
   display: block;
@@ -53,7 +54,7 @@ header{
   background-image:url(resources/header.png);
   background-size: cover;
   background-position: left;
-  margin: 0px;
+  margin: 0;
   padding: 5px;
   height: 50px;
   opacity: 0.9;
@@ -119,6 +120,7 @@ header{
   background-repeat: no-repeat;
   border-top:solid #3D62CF;
   -webkit-transition: 1s;
+  z-index: 1;
 }
 #home-photo:hover{
   transition: 1s;
@@ -153,25 +155,27 @@ header{
 
 @-webkit-keyframes rotation {
   0% {
-      -webkit-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg) scale(0.8);
       left: -20%;
-      top: 0px;
+      top: 0;
       opacity:0.9;
   }
-  50% { 
+  50% {
+    -webkit-transform: rotate(180deg) scale(1.1);
       left:-40%;
       top: 180px;
       opacity: 0.4;
   }
   75% {
+    -webkit-transform: rotate(270deg) scale(1.3);
       left:-90%;
-      top:150px;
+      top:300px;
       opacity:1;
   }
   100% {
-      -webkit-transform: rotate(179deg);
+    -webkit-transform: rotate(360deg) scale(0.8);
       left: -20%;
-      top: 0px;
+      top: 0;
       opacity:0.9;
   }
 }
@@ -215,15 +219,93 @@ header{
 
 
 .personalProjects_container{
-  background-image: url(trader/resources/background-r.jpg);
-  background-color: #21D0ED ;
+  background-color: #009afa ;
   background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 1100px;
+  z-index: 1;
+  }
+.img-container{
+
+  border-top: solid #3D62CF;
+  margin-top: 20px;
+  width: 50%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+.game-screenshot{
+  background-image:url(resources/tictactoe-screen2.png);
+  width: 70%;
+  height: 300px;
+  margin-top: 85px;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.fractal-container:{
+  displey: flex;
+  width: 10%
+  height: 20px;
+}
+.buttons-container{
+  border-top: solid #3D62CF;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  height: 1100px;
   align-items: center;
-  justify-content: center;
+  width: 40%;
+  height: 100%;
+  z-index: 1;
+}
+#fractal2{
+  width: 200px;
+  height: 200px;
+  opacity: 0.9;
+  position: relative;
+  transform:scale(.5);
+
+
+  -webkit-animation: rotation2 60s infinite linear;
+}
+
+@-webkit-keyframes rotation2 {
+  0% {
+    -webkit-transform: rotate(-1deg) scale(1.5);
+    left: 20%;
+    top: 0;
+    opacity:1;
   }
+  25% {
+    -webkit-transform: rotate(-90deg) scale(3);
+    left: 80%;
+    top: -300px;
+    opacity: 0.4;
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(4);
+    left: 140%;
+    top: 100px;
+    opacity: 0.6;
+  }
+  75% {
+    -webkit-transform: rotate(-200deg) scale(2);
+    left: 80%;
+    top:400px;
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(1.5);
+    left: 20%;
+    top: 0;
+    opacity:1;
+  }
+}
 
 
 
