@@ -9,6 +9,9 @@ body{
 a{
   color: #3D62CF;
 }
+h1{
+  color: white;
+}
 h2{
   line-height: 35px;
 }
@@ -22,6 +25,7 @@ h2{
   color: white;
   padding: 20px 30px;
   margin: 10px 20px;
+  border: none;
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -29,6 +33,7 @@ h2{
   background-image: linear-gradient(to right, #34e6f4 0%, #0452C1 51%, #74F3FA 100%);
   background-size: 200% auto;
   box-shadow: 0 0 20px rgba(0,0,0,.5);
+  cursor: pointer;
   transition: .5s;
 }
 .button:hover {background-position: right center;
@@ -239,7 +244,7 @@ header{
   z-index: 1;
 }
 .game-screenshot{
-  background-image:url(resources/tictactoe-screen2.png);
+  background-image:url(resources/empty-screen.png);
   min-width: 250px;
   width:70%;
   height: 300px;
@@ -249,6 +254,7 @@ header{
   background-repeat: no-repeat;
   z-index: 1;
   box-shadow: 50px 50px 50px rgba(52,230,244,.4);
+  opacity: 0.4;
 }
 .fractal-container:{
   displey: flex;
