@@ -32,7 +32,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580207678226</updated>
-      <workItem from="1580207685132" duration="15473000" />
+      <workItem from="1580207685132" duration="16075000" />
+      <workItem from="1580229022310" duration="29000" />
+      <workItem from="1580229582022" duration="500000" />
+      <workItem from="1580301583732" duration="4826000" />
     </task>
     <servers />
   </component>
@@ -40,13 +43,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Notifications" timestamp="1580304713446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1580304713446" />
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580208548889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580208548889" />
-    <state x="184" y="8" key="SettingsEditor" timestamp="1580208563064">
+    <state x="184" y="8" key="SettingsEditor" timestamp="1580304705884">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580208563064" />
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580304705884" />
   </component>
 </project>
