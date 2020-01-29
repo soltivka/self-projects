@@ -7,67 +7,69 @@
 </head>
 <body>
 	<header> 
-		<div class="logo"></div>
-		<h1 class="header_button">Soltivka.ho.ua</h1>
-		<div class="pages">
-			<h1 class="header_button">Home</h1>
-			<h1 class="header_button">Personal projects</h1>
-			<h1 class="header_button">My works</h1>
+		<h1 id="sitename">Soltivka.ho.ua</h1>
+		<div class="header-buttons">
+			<h3 class="header_button">Home</h3>
+			<h3 class="header_button">Personal projects</h3>
+			<h3 class="header_button">My works</h3>
 		</div>
 
 	</header>
+	
 
-	<div class="home_container">
-		<div class="block_info block">
-			<h1>Hello and Welcome</h1>
-			<h2>My name is Ivko Stanislav
-				and this is my home page.</h2>
-		</div>
-		<div class="home_info">
-			<div class="block_contacts block">
-			<h1 class="h1_center">Contacts</h1>
-			<b>Email: </b><a href="mailto:soltivka@gmail.com">soltivka@gmail.com</a><br>
-				<b>Phone: </b>
-				<span>+38 050-62-99-95*</span>
-			</div>
-			<div class="block_tehnologies block">
-			<h1 class="h1_center">Skills</h1>
-			<P><b>CSS2.1:</b> good<br>
-				<b>HTML4:</b> good<br>
-				<b>HTML5 and CSS3:</b> cross-browser elements<br>
-				<b>Javascript</b>: basics and the use of ready-made scripts <br>
-				<b>jQuery:</b> good</P>
-			</div>
-			<div class=" photo block">
-				<div class="photo_inner"></div>
+	<div class="home">
+		<a href="https://www.facebook.com/stas.taras.3" id="home-photo" class="container"></a>
+		<div id="home-info" class="container">
+			<div id="home-info-inner" class="container">
+				<h1>Hello and Welcome</h1>
+				<h2>My name is Ivko Stanislav and this is my home page.<br>
+				</h2>
 			</div>
 		</div>
-			
+		
+		<div id="home-fractal-container">
+			<img src="resources/fractal.png" class = "image" id="home-fractal">
+		</div>
+		
 	</div>
+
 
 	<div class="personalProjects_container">
 
-		<h1 >Мои проэкты</h1>
-		<div>
-			<a href="tictactoe/index.html" class="button">Tic Tac Toe</a>
-			
-		</div>
-		<div>
-			<a href="trader/index.html" class="button">Trader</a>
-			
+		<div class="fractal-container">
+			<img src="resources/fractal2.png" class = "image" id="fractal2">
 		</div>
 
-		<div>
-			<a href="training/NewProvidence/index.html" class="button"> New Providence </a>
+		<div class="img-container" >
+			<div class="game-screenshot"></div>
 		</div>
-		<div>
-			<a href="training/Corporate/index.html" class="button"> Corporate Landing </a>
+
+
+		<div class="buttons-container">
+			<h1 >Мои проэкты</h1>
+			<div>
+				<a href="tictactoe/index.html" class="button screenshot-button" name ="tictactoe">Tic Tac Toe</a>
+
+			</div>
+			<div>
+				<a  href="trader/index.html" class="button screenshot-button" name="trader">Trader</a>
+			</div>
+
+			<div>
+				<a href="training/newprovidence/index.html" class="button screenshot-button" name ="newprovidence"> New Providence </a>
+			</div>
+
+			<div>
+				<a href="training/corporate/index.html" class="button screenshot-button" name="corporate"> Corporate Landing </a>
+			</div>
 		</div>
+
 		
 	</div>
 	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 	<script src="index.js"></script>
 </body>
 </html>
