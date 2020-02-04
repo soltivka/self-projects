@@ -1,0 +1,96 @@
+*{
+    font-family: "Roboto Light", sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #009afa;
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #009afa;
+}
+.gamefield{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    background-color: #3D62CF;
+    margin: 5%;
+}
+.gamefield_head{
+    display: flex;
+    width: 100%;
+    margin: 20px;
+}
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;}
+.button{
+    cursor: pointer;
+    display:block;
+    margin: 10px;
+    background-color: #3D62CF;
+    color: white;
+    border: none;
+    padding: 5px 10px 0 10px;
+    text-align: center;
+    border-left: solid;
+    border-right: solid;
+    border-radius: 30px;
+    border-color: #009afa;
+    border-width: 1px;
+    min-width: 100px;
+}
+.button:hover {
+    background-image: linear-gradient(to top, #009afa 0%,#3D62CF 50%, #3D62CF 100%);
+    background-size: 200% auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.5);
+    transition: .3s;
+}
+.question{
+    width: 70%;
+    color: white;
+    font-family: "Roboto Light", sans-serif;
+}
+.icon{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+}
+.icon:hover{
+    transform:scale(1.1);
+}
+.card{
+    display: flex;
+
+    flex-direction: column;
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+
+    background-color: #3D62CF;
+    border: none;
+    border-top: solid 1px #009afa;
+    border-bottom: solid 1px #009afa;
+    border-radius: 10%;
+    align-items: center;
+}
+
+.template{
+    display: none;
+}
+.correct{
+    color: forestgreen;
+}
+.green{
+    background-color: forestgreen;
+}
+.red{
+    background-color: darkred;
+}
