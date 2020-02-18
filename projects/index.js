@@ -21,6 +21,9 @@ $(document).ready(function(){
                         {name: 'question' ,
                             adress: "url(resources/questions.png)",
                             text: 'Questions',},
+                        {name: 'questionsReact' ,
+                            adress: "url(resources/questions.png)",
+                            text: 'Questions React',},
     ];
 
     let changeScreenshot = function(){
