@@ -15,6 +15,15 @@ $(document).ready(function(){
                         {name: 'corporate' ,
                           adress: "url(resources/corporate-screen.png)",
                             text: 'corporate landing',},
+                        {name: 'lines' ,
+                         adress: "url(resources/empty-screen.png)",
+                         text: 'Lines',},
+                        {name: 'question' ,
+                            adress: "url(resources/questions.png)",
+                            text: 'Questions',},
+                        {name: 'questionsReact' ,
+                            adress: "url(resources/questions.png)",
+                            text: 'Questions React',},
     ];
 
     let changeScreenshot = function(){
